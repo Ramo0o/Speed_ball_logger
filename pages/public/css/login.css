@@ -1,0 +1,35 @@
+
+
+.containers {
+    margin-top: 100px;
+    margin-left: 40%;
+    width: fit-content; /* Shrink the width to fit the content */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(6, 44, 148, 0.589); /* Black background with 50% opacity */
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.containers input[type="text"],
+
+.containers input[type="submit"] {
+    margin: 10px 0;
+    padding: 10px;
+    width: 200px;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.containers input[type="submit"] {
+    background-color: #1741ca; /* Green */
+    color: white;
+    cursor: pointer;
+}
+
+.containers input[type="submit"]:hover {
+    background-color: #12248b;
+}
