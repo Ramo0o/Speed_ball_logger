@@ -1,0 +1,17 @@
+body{
+    background-image: url('/numbers_desktop_background.png') !important;
+}
+.player_data{
+    font-family: "Amatic SC", sans-serif;
+    font-size: 24px;
+    font-weight: 900;
+    color: black;
+}
+.player_name{
+    font-size: 32px;
+    color: black;
+    font-size: 54px;
+}
+#div1{
+    margin-left:10px;
+}

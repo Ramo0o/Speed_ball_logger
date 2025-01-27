@@ -1,0 +1,62 @@
+
+.error {
+    background-color: red !important; /* Red background color */
+    color: white !important; /* Optional: Text color for better readability */
+    border: 1px solid darkred !important; /* Optional: Darker border for better visibility */
+    outline: none !important; /* Optional: Remove default outline if desired */
+}
+#header{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    margin:10px;
+}
+#fields_container{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    margin:10px;
+}
+#fields{
+    display: grid;
+    width: 50%;
+    grid-gap: 20px;
+}
+#centered-select{
+    text-align: center;
+    align-items: center;
+}
+#submit{
+    border: none;
+    background:linear-gradient(to left,rgb(2, 2, 143),rgb(58, 44, 255));
+    color: white;
+}
+#submit:hover{
+    background:linear-gradient(to left,rgb(58, 44, 255),rgb(2, 2, 143));
+}
+
+.header{
+    color: black;
+}
+::placeholder{
+    color:black;
+    opacity: 50%;
+}
+
+input[type = text]{
+    background-color: transparent;
+    border:none;
+    border-bottom: 2px solid black;
+}
+input[type = number]{
+    background-color: transparent;
+    border:none;
+    border-bottom: 2px solid black;
+}
+#time{
+    text-align: center;
+    background-color: transparent;
+    border: none;
+}

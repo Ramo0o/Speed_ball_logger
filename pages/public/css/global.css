@@ -1,0 +1,85 @@
+body{
+    background-image: url('/desktop_background.png');
+    background-size: 100%!important ; /* or use contain based on your needs */
+    background-position: center center!important ;
+    background-repeat: no-repeat!important ; 
+    min-height: 100vh!important ;
+    margin: 0;
+}
+.topbar{
+    color: black ;
+    display: flex;
+    align-items: center;
+    height: 50px;
+    position: sticky !important;
+    top: 0 !important; /* Make sure the topbar stays at the top */
+    z-index: 0 !important;
+    width: 100%;
+    background-color: transparent;
+    transition: background-color 0.3s ease;
+}
+.topbar:hover{
+    background-color: rgb(2, 86, 196);
+}
+/* Base styling for the topbar */
+.topbar {
+    background-color: transparent; /* Light background color for the nav bar */
+    padding: 10px 20px; /* Padding for spacing */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    display: flex;
+    justify-content: center; /* Distribute space between items */
+    align-items: center; /* Center items vertically */
+}
+
+/* Styling for the unordered list inside the topbar */
+.topbar ul {
+    align-items: center;
+    list-style: none; /* Remove default list styling */
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+    display: flex; /* Align list items horizontally */
+    gap: 20px; /* Space between list items */
+}
+
+/* Styling for the list items in the topbar */
+.topelements {
+    margin: 0; /* Reset margin to avoid extra spacing */
+}
+
+/* Link styling */
+.topbar a {
+    color: black; /* Dark gray text color for better contrast */
+    text-decoration: none; /* Remove underline */
+    font-weight: 500; /* Slightly bolder text */
+    padding: 5px 10px; /* Add padding for clickable area */
+    transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transition for hover effects */
+}
+
+/* Hover and focus state for links */
+.topbar a:hover,
+.topbar a:focus {
+    background-color:transparent; /* Light background color on hover */
+    border-radius: 5px; /* Slightly rounded corners */
+    color: white; /* Black text color on hover */
+}
+
+/* Active state for the current page link */
+.topbar a.active {
+    background-color: transparent; /* Dark background color for active state */
+    color: #fff; /* White text color for active state */
+    border-radius: 5px; /* Rounded corners */
+}
+
+/* Responsive design adjustments */
+@media (max-width: 768px) {
+    body{
+        background-image: url('/mobile_background.png');
+        background-size: cover; /* Ensures the image covers the entire background */
+        background-position: center; /* Centers the image in the viewport */
+        background-repeat: no-repeat; /* Prevents the image from repeating */
+        background-attachment: fixed;
+
+        margin: 0;
+        min-height: 100vh; /* Ensures the body height is 100% of the viewport height */
+    }
+}
